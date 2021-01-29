@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginStart="20dp"
+           app:neumorph_shapeType="pressed">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textCursorDrawable="@drawable/cursor"
+              android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:background="@android:color/transparent"/>
+       </soup.neumorphism.NeumorphCardView>
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginStart="20dp"
+           app:neumorph_shapeType="basin">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textCursorDrawable="@drawable/cursor"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:background="@android:color/transparent"/>
+       </soup.neumorphism.NeumorphCardView>
+       <soup.neumorphism.NeumorphCardView
+           style="@style/Widget.Neumorph.CardView"
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginStart="20dp">
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:textCursorDrawable="@drawable/cursor"
+               android:layout_marginStart="10dp"
+               android:layout_marginEnd="10dp"
+               android:background="@android:color/transparent"/>
+
+       </soup.neumorphism.NeumorphCardView>
+
+       <soup.neumorphism.NeumorphButton
+           style="@style/Widget.Neumorph.Button"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="@string/app_name"/>
+
+       <soup.neumorphism.NeumorphButton
+           style="@style/Widget.Neumorph.Button"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:text="@string/app_name"/>
+
+   </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
